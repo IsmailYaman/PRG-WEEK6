@@ -1,51 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="loadModel.js" type="module"></script>
     <title>Decision Tree Inleveropdracht</title>
-  </head>
+</head>
 
-  <body class="bg-gray-100 flex items-center justify-center h-screen">
+<body class="bg-gray-100 flex items-center justify-center h-screen">
     <div class="bg-white rounded-lg shadow-lg p-8 max-w-4xl w-full">
-      <div class="mb-4 text-center">
-        <h3 class="text-2xl font-bold text-center">Am I edible? 😉</h3>
-      </div>
-      <div class="mb-4">
-        <p>
-          Can you predict any mushrooms? Is it either edible: <strong class="text-green-500">E</strong> or poisonous: <strong class="text-red-500">P</strong>
-        </p>
-      </div>
-      <div class="flex mb-4">
-        <select
-          id="mushroomClass"
-          class="flex-1 border rounded-l-lg py-2 px-3"
-          required
-        >
-          <option value="e">Edible</option>
-          <option value="p">Poisonous</option>
-        </select>
-        <button
-          id="mushroomClassButton"
-          class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-r-lg"
-        >
-          Predict
-        </button>
-      </div>
+        <div class="mb-4 text-center">
+            <h3 class="text-2xl font-bold text-center">Am I edible? 😉</h3>
+        </div>
+        <div class="mb-4">
+            <p>
+                Can you predict any mushrooms? Is it either edible: <strong class="text-green-500">E</strong> or
+                poisonous: <strong class="text-red-500">P</strong>
+            </p>
+        </div>
+        <div class="flex mb-4">
+            <select id="mushroomClass" class="flex-1 border rounded-l-lg py-2 px-3" required>
+                <option value="e">Edible</option>
+                <option value="p">Poisonous</option>
+            </select>
+            <button id="mushroomClassButton"
+                class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-r-lg">
+                Predict
+            </button>
+        </div>
 
-      <div id="view"></div>
-      <div class="mt-5 bg-green-200 rounded-lg">
-        <p id="userInput" class="font-bold m-5"></p>
-      </div>
+        <div id="view"></div>
+        <div class="mt-5 bg-green-200 rounded-lg">
+            <p id="userInput" class="font-bold m-5"></p>
+        </div>
+        <a href="./index.html" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg">See
+            how it's trained</a>
     </div>
-  </body>
+</body>
+
 </html>
