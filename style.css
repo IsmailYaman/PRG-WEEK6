@@ -15,9 +15,9 @@ div {
     margin: 10px;
 }
 
-#view {
+#chart {
     overflow: scroll;
-    padding: 20px;
+    padding:20px;
 }
 
 * {
